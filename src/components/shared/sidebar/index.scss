@@ -1,0 +1,64 @@
+.sidebar {
+  position: relative;
+  padding: 25px 25px 0;
+  width: 350px;
+  height: calc(100vh - 70px);
+  background: var(--sidebar-background);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 700;
+
+  a {
+    color: var(--sidebar-text-color);
+    &:active,
+    :visited {
+      color: var(--sidebar-active-text-color);
+    }
+  }
+  .icon {
+    font-size: 26px;
+  }
+
+  .logo {
+    img {
+      height: 39px;
+    }
+  }
+  .main-menu {
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.327);
+  }
+
+  .main-menu,
+  .playlist {
+    padding-top: 25px;
+    width: 100%;
+    ul {
+      li {
+        height: 40px;
+      }
+    }
+    a {
+      font-size: 0.875rem;
+      &:current {
+        color: var(--sidebar-active-text-color);
+      }
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      gap: 15px;
+    }
+  }
+  .nav-footer {
+    bottom: 0;
+    position: absolute;
+    height: 100px;
+    a {
+      font-size: 11px;
+      font-weight: 400;
+    }
+  }
+}
