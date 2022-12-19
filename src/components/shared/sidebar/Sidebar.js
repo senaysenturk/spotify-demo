@@ -10,75 +10,75 @@ import {
 } from "react-icons/ri";
 import { VscLibrary } from "react-icons/vsc";
 import { BsPlusSquareFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo">
-        <a href="#home">
+        <Link className="link" to="/">
           <img src={logo} alt=""></img>
-        </a>
+        </Link>
       </div>
       <div className="main-menu">
         <ul>
           <li>
-            <a className="link" href="/">
+            <Link className="link" to="/">
               <span className="icon">
                 <RiHome5Fill />
               </span>{" "}
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link" href="search">
-              <span  className="icon">
+            <Link className="link" to="search">
+              <span className="icon">
                 <RiSearchLine />
               </span>
               Search
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link" href="your-library">
-              <span  className="icon">
+            <Link className="link" to="your-library">
+              <span className="icon">
                 <VscLibrary />
               </span>
               Your Library
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="playlist">
         <ul>
           <li>
-            <a className="link" href="create-playlist">
-              <span  className="icon">
+            <Link className="link" to="create-playlist">
+              <span className="icon">
                 <BsPlusSquareFill />
               </span>
               Create Playlist
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link" href="liked-songs">
-              <span  className="icon">
+            <Link className="link" to="liked-songs">
+              <span className="icon">
                 <RiHeart3Line />
               </span>
               Liked Songs
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="nav-footer">
         <ul>
           <li>
-            <a className="link" href="">
+            <Link className="link" to="">
               Cookies
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link" href="">
+            <Link className="link" to="">
               Privacy
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

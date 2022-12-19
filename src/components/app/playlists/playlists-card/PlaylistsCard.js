@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
 export function PlaylistsCard() {
   return (
     <>
-      <div class="card">
-        <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-        <div class="play">
-          <span class="fa fa-play"></span>
+      <div className="card">
+        <img src="https://i.scdn.co/image/ab67706f000000025b0a7b8408322a3b9ed15e1e" />
+        <div className="play">
+          <span className="fa fa-play"></span>
         </div>
-        <h4>Today's Top Hits</h4>
-        <p>Rema & Selena Gomez are on top of the...</p>
+        <h4>chill lofi study beats</h4>
+        <p>The perfect study beats. Find your focus, crush...</p>
       </div>
     </>
   );

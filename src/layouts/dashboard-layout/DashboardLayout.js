@@ -4,8 +4,8 @@ import { Outlet } from "react-router-dom";
 // components
 import Sidebar from "../../components/shared/sidebar/Sidebar";
 import Header from "../../components/shared/header/Header";
-import Playlist from "../../components/app/playlists/Playlists";
 import Footer from "../../components/shared/footer/Footer";
+import Playlists from "../../components/app/playlists/Playlists";
 
 export const DashboardLayout = () => {
   return (
@@ -19,8 +19,6 @@ export const DashboardLayout = () => {
       <div className="right-side">
         <Header />
         <main>
-          <div className="empty-space"></div>
-          <Playlist />
           <Outlet />
         </main>
       </div>

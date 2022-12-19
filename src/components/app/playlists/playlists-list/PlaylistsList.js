@@ -6,7 +6,7 @@ export const PlaylistsList = ({ title }) => {
   return (
     <>
       <h2>{title}</h2>
-      <div class="list">
+      <div className="list">
         <PlaylistsCard />
         <PlaylistsCard />
         <PlaylistsCard />

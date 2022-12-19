@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Sidebar from "../../../components/shared/sidebar/Sidebar";
 
 export const YourLibrary = () => {
-  return (
-    <div>YourLibrary</div>
-  )
-}
+  return <div>Your Library</div>;
+};
 
 export default YourLibrary;

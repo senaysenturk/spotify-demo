@@ -17,26 +17,32 @@ import { CgToggleSquareOff as CgInpicture } from "react-icons/cg";
 // import { HiQueueList } from "react-icons/hi";
 import { TbMicrophone2, TbDevices2 } from "react-icons/tb";
 import { MdOutlineQueueMusic } from "react-icons/md";
+import ReactAudioPlayer from "react-audio-player";
 // import { RxSpeakerQuiet } from "react-icons/rx";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="music-info">
-        <PlaylistsCard />
-       
-      </div>
+      <div className="music">
+        <div className="music-info">
+          <img src="https://i.scdn.co/image/ab67616d000048516c8ef0538e04f2e28380dcc5" />
+          <div className="song">
+            <p className="name">Experience</p>
+            <p className="artist">Ludovico Einaudi</p>
+          </div>
+        </div>
 
-      <div className="music-like">
-      <a className="link" href="/">
-          {" "}
-          <AiOutlineHeart />
-        </a>
+        <div className="music-like">
+          <a className="link" href="/">
+            {" "}
+            <AiOutlineHeart />
+          </a>
 
-        <a className="link" href="/">
-          {" "}
-          <CgInpicture />
-        </a>
+          <a className="link" href="/">
+            {" "}
+            <CgInpicture />
+          </a>
+        </div>
       </div>
 
       <div className="now-playing">
@@ -64,7 +70,7 @@ const Footer = () => {
             <FaUndoAlt />{" "}
           </a>
         </div>
-        <audio controls autoplay muted />
+        {/* <audio controls autoplay muted /> */}
       </div>
 
       <div className="sound-bar">
